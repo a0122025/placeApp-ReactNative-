@@ -2,6 +2,7 @@ import React from "react";
 import { Provider } from "react-redux";
 import ConfigStore from "./src/store/config";
 import MainComponent from "./src/components/main";
+import TabNavigator from './src/components/TabNavigator';
 
 export default class App extends React.Component {
   render() {
@@ -9,7 +10,7 @@ export default class App extends React.Component {
     console.log("testing");
     return (
       <Provider store={myStore}>
-        <MainComponent />
+        <TabNavigator />
       </Provider>
     );
   }
