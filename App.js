@@ -1,17 +1,18 @@
-import React from "react";
-import { Provider } from "react-redux";
-import ConfigStore from "./src/store/config";
-import MainComponent from "./src/components/main";
-import TabNavigator from './src/components/TabNavigator';
+import React, { Component } from 'react';
+import { View, Text, Button } from 'react-native';
 
-export default class App extends React.Component {
-  render() {
-    const myStore = ConfigStore();
-    console.log("testing");
-    return (
-      <Provider store={myStore}>
-        <TabNavigator />
-      </Provider>
-    );
-  }
+class App extends Component {
+    loginHandler = () => {};
+
+    render() {
+        console.log('Taking');
+        return (
+            <View>
+                <Text>App Screen</Text>
+                <Button title="Login" onPress={this.loginHandler} />
+            </View>
+        );
+    }
 }
+
+export default App;
