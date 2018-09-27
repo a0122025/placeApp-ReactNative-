@@ -3,8 +3,12 @@ import { Text, View } from 'react-native';
 import { TabNavigator, createBottomTabNavigator  } from 'react-navigation'; 
 import LoginComponent from './Auth/Auth';
 import MainComponent from './main';
+import SplashScreen from 'react-native-splash-screen';
 
 class HomeScreen extends Component {
+  componentDidMount() {
+      SplashScreen.hide();
+  }
   render() {
     return (
       <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>

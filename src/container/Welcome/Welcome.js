@@ -3,7 +3,7 @@ import { View, Text } from 'react-native';
 import { Image } from 'react-native-animatable';
 import imgLogo from '../../assets/hotel.jpg';
 
-class Auth extends Component {
+class Welcome extends Component {
     render() {
         return (
             <View>
@@ -20,4 +20,4 @@ class Auth extends Component {
     }
 }
 
-export default Auth;
+export default Welcome;
